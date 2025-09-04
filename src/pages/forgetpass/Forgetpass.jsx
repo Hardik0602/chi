@@ -16,7 +16,7 @@ const Forgetpass = ({ navigation }) => {
   const insets = useSafeAreaInsets();
   return (
     <KeyboardAvoidingView className='flex-1 bg-black'>
-      <StatusBar barStyle={'light-content'} />
+      <StatusBar translucent backgroundColor='transparent' barStyle={'light-content'} />
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View className='flex-1 bg-[#A531E9]' style={{ paddingTop: insets.top }}>
           <View className='h-[40%] items-center justify-center'>

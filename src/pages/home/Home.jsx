@@ -121,7 +121,7 @@ const Home = ({ navigation }) => {
   }, []);
   return (
     <View className='flex-1 bg-[#A532E9]' style={{ paddingTop: insets.top }}>
-      <StatusBar barStyle={'light-content'} />
+      <StatusBar translucent backgroundColor='transparent' barStyle={'light-content'} />
       <View className='h-[86%] items-center justify-center'>
         <View className='w-[90%]'>
           <View className='my-[5%] h-[10%]'>

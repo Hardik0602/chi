@@ -26,7 +26,7 @@ const Profile = () => {
     const [pass, setPass] = useState('')
     return (
         <KeyboardAvoidingView className='flex-1 bg-black'>
-            <StatusBar barStyle={'light-content'} />
+            <StatusBar translucent backgroundColor='transparent' barStyle={'light-content'} />
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <ScrollView
                     contentContainerStyle={{ flexGrow: 1 }}

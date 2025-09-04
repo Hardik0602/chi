@@ -26,7 +26,7 @@ const Age = ({ navigation }) => {
     };
     return (
         <KeyboardAvoidingView className='flex-1 bg-black'>
-            <StatusBar barStyle={'dark-content'} />
+            <StatusBar translucent backgroundColor='transparent' barStyle={'dark-content'} />
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View className='flex-1 bg-[#F6F6F6]' style={{ paddingBottom: insets.bottom, paddingTop: insets.top }}>
                     <View className='h-[15%] justify-end items-center'>

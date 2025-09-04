@@ -17,7 +17,7 @@ const Email = ({ navigation }) => {
     }, [email]);
     return (
         <KeyboardAvoidingView className='flex-1 bg-black'>
-            <StatusBar barStyle={'dark-content'} />
+            <StatusBar translucent backgroundColor='transparent' barStyle={'dark-content'} />
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View className='flex-1 bg-[#F6F6F6]' style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
                     <View className='h-[15%] justify-end items-center'>

@@ -99,7 +99,7 @@ const Schedules = () => {
     };
     return (
         <View className='flex-1 bg-white'>
-            <StatusBar barStyle={'light-content'} />
+            <StatusBar translucent backgroundColor='transparent' barStyle={'light-content'} />
             <View className='h-[86%] items-center' style={{ paddingTop: insets.top }}>
                 <View className='h-[40%] w-full items-center absolute'>
                     <View className='items-center justify-center bg-[#A531E9] w-[110%] h-full rounded-b-full' />

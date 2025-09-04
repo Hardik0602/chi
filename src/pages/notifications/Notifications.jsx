@@ -13,7 +13,7 @@ const Notifications = () => {
     const insets = useSafeAreaInsets();
     return (
         <View className='flex-1 bg-white'>
-            <StatusBar barStyle={'light-content'} />
+            <StatusBar translucent backgroundColor='transparent' barStyle={'light-content'} />
             <View className='h-[86%]'>
                 <View className='h-[33%] w-full items-center'>
                     <View className='items-center justify-center bg-[#A531E9] w-[110%] h-full rounded-b-full'>

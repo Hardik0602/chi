@@ -28,7 +28,7 @@ const Register = ({ navigation }) => {
   }, [verified]);
   return (
     <KeyboardAvoidingView className="flex-1 bg-black">
-      <StatusBar barStyle={'light-content'} />
+      <StatusBar translucent backgroundColor='transparent' barStyle={'light-content'} />
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View className='flex-1 bg-[#A531E9]' style={{ paddingTop: insets.top }}>
           <View className='h-[40%] items-center justify-center'>
@@ -60,18 +60,18 @@ const Register = ({ navigation }) => {
                   onChangeText={setRePassword} />
               </View>
               <View className='items-center h-[25%]'>
-                <TouchableOpacity
+                {/* <TouchableOpacity
                   className={`${disable ? 'bg-gray-500' : 'bg-[#AB33ED]'} rounded-xl items-center justify-center w-full h-[50%]`}
                   disabled={disable}
                   onPress={() => onPress()}>
                   <Text className='text-white font-bold text-[20px]'>Sign Up</Text>
-                </TouchableOpacity>
-                {/* <TouchableOpacity
+                </TouchableOpacity> */}
+                <TouchableOpacity
                   className={`${disable ? 'bg-gray-500' : 'bg-[#AB33ED]'} rounded-xl items-center justify-center w-full h-[50%]`}
                   disabled={disable}
                   onPress={() => { navigation.navigate('OTP', { phone: mobile }) }}>
                   <Text className='text-white font-bold text-[20px]'>Sign Up</Text>
-                </TouchableOpacity> */}
+                </TouchableOpacity>
                 <View className='flex-row mt-[8%]'>
                   <Text>Already have an account?</Text>
                   <TouchableOpacity onPress={() => { navigation.replace('Login') }}>

@@ -7,7 +7,7 @@ const Welcome = ({ navigation }) => {
   const isLoggedIn = false; // replace with check for login
   return (
     <View className="flex-1 bg-[#F6F6F6]" style={{ justifyContent: 'space-evenly', paddingTop: insets.top, paddingBottom: insets.bottom }}>
-      <StatusBar barStyle={'dark-content'} />
+      <StatusBar translucent backgroundColor='transparent' barStyle={'dark-content'} />
       <View className='items-center'>
         <Text className="text-[35px] font-bold text-black">Welcome to</Text>
         <Text className="text-[35px] font-bold text-[#AB33ED]">Dawa Sathi</Text>
